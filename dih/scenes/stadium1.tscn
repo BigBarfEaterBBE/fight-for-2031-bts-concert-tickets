@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://wpgnhi1e2agm"]
+
+[ext_resource type="Texture2D" uid="uid://c4brl4n4fk63q" path="res://assets/house-of-blues - Copy.png" id="1_a24hr"]
+
+[node name="stadium1" type="Node"]
+
+[node name="map" type="Sprite2D" parent="."]
+texture = ExtResource("1_a24hr")
+centered = false
+
+[node name="timer" type="Timer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
