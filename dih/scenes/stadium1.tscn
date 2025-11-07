@@ -1,11 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://wpgnhi1e2agm"]
+[gd_scene load_steps=4 format=3 uid="uid://wpgnhi1e2agm"]
 
-[ext_resource type="Texture2D" uid="uid://c4brl4n4fk63q" path="res://assets/house-of-blues - Copy.png" id="1_a24hr"]
+[ext_resource type="Script" uid="uid://dp5kqctfslypg" path="res://scripts/seat_loader.gd" id="1_rlugu"]
+[ext_resource type="Texture2D" uid="uid://d111pc2gcfjty" path="res://assets/house-of-blues.png" id="2_srk0e"]
+[ext_resource type="PackedScene" uid="uid://peklaytgqtgf" path="res://scenes/seat.tscn" id="3_ycan0"]
 
 [node name="stadium1" type="Node"]
+script = ExtResource("1_rlugu")
 
 [node name="map" type="Sprite2D" parent="."]
-texture = ExtResource("1_a24hr")
+position = Vector2(8, 10)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_srk0e")
 centered = false
 
 [node name="timer" type="Timer" parent="."]
@@ -13,3 +18,75 @@ centered = false
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="seat" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(379, 92)
+
+[node name="seat2" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(397, 89)
+
+[node name="seat3" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(415, 86)
+
+[node name="seat4" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(435, 83)
+
+[node name="seat5" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(453, 81)
+
+[node name="seat8" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(508, 80)
+
+[node name="seat7" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(489, 80)
+
+[node name="seat6" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(471, 80)
+
+[node name="seat9" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(527, 80)
+
+[node name="seat10" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(547, 82)
+
+[node name="seat11" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(564.665, 82.8685)
+
+[node name="seat12" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(583, 85)
+
+[node name="seat13" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(602, 88)
+
+[node name="seat14" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(619.829, 89.9634)
+
+[node name="seat15" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(678, 134)
+
+[node name="seat16" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(661, 129)
+
+[node name="seat17" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(644, 125)
+
+[node name="seat18" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(626, 121)
+
+[node name="seat19" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(608, 118)
+
+[node name="seat20" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(590, 115)
+
+[node name="seat21" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(573, 112)
+
+[node name="seat22" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(555, 110)
+
+[node name="seat23" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(537, 109)
+
+[node name="seat24" parent="." instance=ExtResource("3_ycan0")]
+position = Vector2(519, 109)
