@@ -1,17 +1,15 @@
+@tool
 extends Node
 
-@onready var timer = $timer
-@onready var time_label = $Label
-
-var total_available_seats = 5
-var seats_selected = 0
-var game_running = false
+@onready var map = $map
+var map_texture = map.texture
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if total_available_seats > 0:
-		timer.start()
-		game_running = true
+	if Engine.is_editor_hint():
+		#for x in viewport.width():
+			#for y in viewport.height():
+				pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvqseeubv5h10"]
+
+[ext_resource type="Script" uid="uid://b3cfcxo354wt4" path="res://scripts/stadium_1.gd" id="1_bl13t"]
+[ext_resource type="PackedScene" uid="uid://peklaytgqtgf" path="res://scenes/seat.tscn" id="1_errlg"]
+
+[node name="test" type="Node"]
+script = ExtResource("1_bl13t")
+
+[node name="timer" type="Timer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="seat" parent="." groups=["seats"] instance=ExtResource("1_errlg")]
+position = Vector2(264, 148)
+scale = Vector2(5, 5)

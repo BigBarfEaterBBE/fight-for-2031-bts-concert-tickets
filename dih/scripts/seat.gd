@@ -8,15 +8,30 @@ var is_available = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	seat_visual.color = available_color
+	input_pickable = true
+	
+	if is_instance_valid(seat_visual):
+		if seat_visual.material:
+			seat_visual.material = seat_visual.material.duplicate()
+		seat_visual.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 		
-func _input_event(viewport:Node, event:InputEvent, shape_idx: int):
+func _input_event(_viewport:Node, event:InputEvent, shape_idx:int):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		print("CLICKED")
 		if is_available:
 			is_available = false
-			seat_visual.color = selected_color
+			if _change_material_color(selected_color):
+				print("color changed success")
+			else:
+				print("color change failed")
 			collision_shape.set_deferred("disabled", true)
 			emit_signal("selected_seat")
-			get_tree().create_timer(0.1).timeout.connect(func():queue_free())
-		get_tree().set_input_as_handled()
 				
+func _change_material_color(new_color: Color) -> bool:
+	if not is_instance_valid(seat_visual) or seat_visual.material == null:
+		print("NO VALID MAT FOUND")
+		return false
+	var material = seat_visual.material
+	material.set_shader_parameter("color", new_color)
+	return true
+	
