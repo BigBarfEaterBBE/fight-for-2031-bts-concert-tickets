@@ -1,14 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://peklaytgqtgf"]
+[gd_scene load_steps=5 format=3 uid="uid://peklaytgqtgf"]
 
+[ext_resource type="Script" uid="uid://b8iq2yqcxrav2" path="res://scripts/seat.gd" id="1_dmy32"]
 [ext_resource type="Shader" uid="uid://cxg5e4dmbfeyi" path="res://assets/seat.gdshader" id="1_epv31"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l8guc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dmy32"]
 shader = ExtResource("1_epv31")
-shader_parameter/color = Color(0.513726, 0, 0, 1)
+shader_parameter/color = Color(0.784314, 0.784314, 0.784314, 1)
 
 [node name="seat" type="Area2D"]
+script = ExtResource("1_dmy32")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.8, 0.8)
