@@ -14,6 +14,10 @@ func _ready() -> void:
 		if seat_visual.material:
 			seat_visual.material = seat_visual.material.duplicate()
 		seat_visual.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
+		_change_material_color(selected_color)
+		is_available = false
+		if is_instance_valid(collision_shape):
+			collision_shape.set_deferred("disabled", true)
 		
 func _input_event(_viewport:Node, event:InputEvent, shape_idx:int):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
@@ -26,7 +30,14 @@ func _input_event(_viewport:Node, event:InputEvent, shape_idx:int):
 				print("color change failed")
 			collision_shape.set_deferred("disabled", true)
 			emit_signal("selected_seat")
-				
+
+func make_available():
+	if is_instance_valid(seat_visual):
+		_change_material_color(available_color)
+		is_available = true
+		if is_instance_valid(collision_shape):
+			collision_shape.set_deferred("disabled", false)
+
 func _change_material_color(new_color: Color) -> bool:
 	if not is_instance_valid(seat_visual) or seat_visual.material == null:
 		print("NO VALID MAT FOUND")

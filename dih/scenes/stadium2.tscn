@@ -1,0 +1,1117 @@
+[gd_scene load_steps=3 format=3 uid="uid://cb385t0me12ys"]
+
+[ext_resource type="Texture2D" uid="uid://cfo4nbqt0ljme" path="res://assets/boch-wang.png" id="1_4m65m"]
+[ext_resource type="PackedScene" uid="uid://peklaytgqtgf" path="res://scenes/seat.tscn" id="2_wbgmb"]
+
+[node name="stadium2" type="Node"]
+
+[node name="map" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_4m65m")
+centered = false
+
+[node name="SeatContainer" type="Node" parent="."]
+
+[node name="seat" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(250, 74)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat2" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(253, 84)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat3" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(256, 95)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat4" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(258, 105)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat5" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(266, 74)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat6" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(269, 84)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat7" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(272, 95)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat8" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(274, 105)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat9" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(282, 74)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat10" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(285, 84)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat11" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(288, 95)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat12" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(290, 105)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat13" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(298, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat14" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(301, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat15" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(304, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat16" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(306, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat17" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(314, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat18" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(317, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat19" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(320, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat20" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(322, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat21" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(330, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat22" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(333, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat23" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(336, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat24" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(338, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat25" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(371, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat26" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(374, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat27" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(377, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat28" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(379, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat29" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(386, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat30" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(389, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat31" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(392, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat32" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(394, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat33" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(403, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat34" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(406, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat35" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(409, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat36" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(411, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat37" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(418, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat38" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(421, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat39" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(424, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat40" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(426, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat41" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(435, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat42" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(438, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat43" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(441, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat44" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(443, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat45" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(450, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat46" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(453, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat47" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(456, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat48" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(458, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat49" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(467, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat50" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(470, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat51" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(473, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat52" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(475, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat53" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(482, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat54" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(485, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat55" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(488, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat56" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(490, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat57" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(499, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat58" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(502, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat59" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(505, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat60" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(507, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat61" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(514, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat62" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(517, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat63" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(520, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat64" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(522, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat65" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(531, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat66" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(534, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat67" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(537, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat68" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(539, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat69" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(546, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat70" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(549, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat71" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(552, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat72" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(554, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat73" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(563, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat74" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(566, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat75" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(569, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat76" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(571, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat77" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(578, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat78" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(581, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat79" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(584, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat80" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(586, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat81" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(595, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat82" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(598, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat83" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(601, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat84" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(603, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat85" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(610, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat86" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(613, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat87" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(616, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat88" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(618, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat89" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(250, 74)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat90" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(253, 84)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat91" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(256, 95)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat92" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(258, 105)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat93" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(266, 74)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat94" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(269, 84)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat95" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(272, 95)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat96" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(274, 105)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat97" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(282, 74)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat98" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(285, 84)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat99" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(288, 95)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat100" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(290, 105)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat101" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(298, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat102" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(301, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat103" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(304, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat104" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(306, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat105" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(314, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat106" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(317, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat107" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(320, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat108" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(322, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat109" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(330, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat110" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(333, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat111" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(336, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat112" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(338, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat113" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(371, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat114" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(374, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat115" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(377, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat116" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(379, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat117" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(386, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat118" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(389, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat119" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(392, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat120" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(394, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat121" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(403, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat122" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(406, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat123" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(409, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat124" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(411, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat125" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(418, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat126" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(421, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat127" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(424, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat128" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(426, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat129" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(435, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat130" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(438, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat131" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(441, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat132" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(443, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat133" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(450, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat134" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(453, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat135" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(456, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat136" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(458, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat137" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(467, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat138" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(470, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat139" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(473, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat140" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(475, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat141" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(482, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat142" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(485, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat143" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(488, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat144" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(490, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat145" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(499, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat146" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(502, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat147" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(505, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat148" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(507, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat149" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(514, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat150" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(517, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat151" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(520, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat152" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(522, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat153" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(531, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat154" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(534, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat155" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(537, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat156" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(539, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat157" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(546, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat158" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(549, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat159" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(552, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat160" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(554, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat161" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(563, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat162" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(566, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat163" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(569, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat164" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(571, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat165" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(578, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat166" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(581, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat167" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(584, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat168" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(586, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat169" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(595, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat170" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(598, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat171" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(601, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat172" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(603, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat173" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(610, 75)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat174" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(613, 85)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat175" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(616, 96)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat176" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(618, 106)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat177" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(263, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat178" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(279, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat179" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(275, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat180" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(295, 65)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat181" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(292, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat182" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(311, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat183" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(308, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat184" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(305, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat185" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(323, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat186" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(327, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat187" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(365, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat188" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(368, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat189" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(362, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat190" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(381, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat191" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(384, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat192" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(378, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat193" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(397, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat194" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(400, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat195" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(394, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat196" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(413, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat197" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(416, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat198" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(410, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat199" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(429, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat200" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(432, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat201" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(426, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat202" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(445, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat203" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(448, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat204" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(442, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat205" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(461, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat206" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(464, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat207" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(458, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat208" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(477, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat209" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(480, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat210" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(474, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat211" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(493, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat212" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(496, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat213" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(490, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat214" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(509, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat215" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(512, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat216" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(506, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat217" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(525, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat218" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(528, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat219" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(522, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat220" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(541, 54)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat221" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(544, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat222" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(538, 44)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat223" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(556, 53)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat224" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(559, 63)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat225" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(553, 43)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat226" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(572, 53)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat227" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(575, 63)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat228" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(569, 43)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat229" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(588, 53)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat230" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(591, 63)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat231" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(585, 43)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat232" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(604, 53)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat233" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(607, 63)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat234" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(601, 43)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat235" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(406, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat236" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(422, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat237" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(439, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat238" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(455, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat239" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(470, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat240" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(486, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat241" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(502, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat242" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(518, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat243" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(534, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat244" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(550, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat245" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(565, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat246" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(581, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat247" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(597, 33)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat248" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(419, 23)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat249" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(435, 23)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat250" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(498, 23)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat251" parent="SeatContainer" groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(514, 23)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat251" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(530, 23)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat252" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(674, 148)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat253" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(676, 159)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat254" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(678, 170)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat255" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(680, 181)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat256" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(697, 149)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat257" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(699, 160)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat258" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(701, 171)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat259" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(703, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat260" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(721, 149)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat261" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(723, 160)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat262" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(725, 171)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat263" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(727, 182)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat264" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(687, 231)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat265" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(688, 242)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat266" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(689, 254)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat267" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(690, 265)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat268" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(710, 232)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat269" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(712, 243)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat270" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(713, 254)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat271" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(714, 265)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat272" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(734, 232)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat273" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(735, 243)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat274" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(736, 254)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat275" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(737, 265)
+scale = Vector2(0.5, 0.5)
