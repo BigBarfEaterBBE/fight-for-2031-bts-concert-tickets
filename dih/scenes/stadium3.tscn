@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0u1wkwnjgnnx"]
+[gd_scene load_steps=2 format=3 uid="uid://d0u1wkwnjgnnx"]
 
 [ext_resource type="Texture2D" uid="uid://colafrayydk27" path="res://assets/agganis_arena.png" id="1_7eswg"]
-[ext_resource type="Script" uid="uid://cay64athvt7xc" path="res://scripts/seat_spawner.gd" id="2_6dphj"]
 
 [node name="stadium3" type="Node"]
 
@@ -11,4 +10,3 @@ texture = ExtResource("1_7eswg")
 centered = false
 
 [node name="SeatContainer" type="Node" parent="."]
-script = ExtResource("2_6dphj")
