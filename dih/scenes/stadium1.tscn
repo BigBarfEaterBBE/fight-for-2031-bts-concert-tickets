@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://wpgnhi1e2agm"]
+[gd_scene load_steps=5 format=3 uid="uid://wpgnhi1e2agm"]
 
 [ext_resource type="Script" uid="uid://b3cfcxo354wt4" path="res://scripts/stadium_1.gd" id="1_rlugu"]
 [ext_resource type="Texture2D" uid="uid://d111pc2gcfjty" path="res://assets/house-of-blues.png" id="2_srk0e"]
 [ext_resource type="PackedScene" uid="uid://peklaytgqtgf" path="res://scenes/seat.tscn" id="3_ycan0"]
+[ext_resource type="FontFile" uid="uid://djtbv2fuoadpy" path="res://assets/Milk Cake.otf" id="4_srk0e"]
 
 [node name="stadium1" type="Node"]
 script = ExtResource("1_rlugu")
@@ -12,12 +13,6 @@ position = Vector2(8, 10)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("2_srk0e")
 centered = false
-
-[node name="timer" type="Timer" parent="."]
-
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
 
 [node name="SeatContainer" type="Node" parent="."]
 
@@ -1458,3 +1453,27 @@ rotation = -3.10997
 [node name="seat376" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(195, 475)
 rotation = -3.10997
+
+[node name="timer" type="Timer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CountdownTimer" type="Timer" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CountdownLabel" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_srk0e")
+theme_override_font_sizes/font_size = 80
+text = "START!"
+
+[connection signal="timeout" from="CountdownTimer" to="." method="_on_countdown_timer_timeout"]

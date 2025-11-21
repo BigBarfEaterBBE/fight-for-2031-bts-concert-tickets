@@ -1085,11 +1085,11 @@ position = Vector2(399, 207)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat42" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(138, 254)
+position = Vector2(146, 403)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat44" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(137, 243)
+position = Vector2(146, 393)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat45" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
@@ -1125,19 +1125,19 @@ position = Vector2(403, 239)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat131" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(135, 222)
+position = Vector2(146, 372)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat132" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(136, 233)
+position = Vector2(146, 382)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat133" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(132, 200)
+position = Vector2(145, 351)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat134" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(133, 211)
+position = Vector2(146, 361)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat135" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
@@ -1161,15 +1161,15 @@ position = Vector2(393, 165)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat202" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(129, 180)
+position = Vector2(144, 331)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat203" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(130, 190)
+position = Vector2(145, 341)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat204" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(126, 169)
+position = Vector2(143, 320)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat205" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
@@ -1197,11 +1197,11 @@ position = Vector2(157, 285)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat51" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(141, 285)
+position = Vector2(145, 434)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat52" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(140, 275)
+position = Vector2(146, 423)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat53" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
@@ -1209,7 +1209,7 @@ position = Vector2(156, 275)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat139" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
-position = Vector2(139, 264)
+position = Vector2(146, 413)
 scale = Vector2(0.5, 0.5)
 
 [node name="seat140" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
@@ -2790,4 +2790,388 @@ scale = Vector2(0.5, 0.5)
 
 [node name="seat567" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
 position = Vector2(405, 260)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat568" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(143, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat569" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(144, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat570" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat571" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 387)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat572" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 365)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat573" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat574" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(161, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat576" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(160, 332)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat577" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(161, 343)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat578" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(159, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat579" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(161, 433)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat580" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat581" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 410)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat582" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(159, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat583" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(160, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat575" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat584" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 393)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat585" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 372)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat586" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 382)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat587" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(177, 351)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat588" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 361)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat589" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(176, 331)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat590" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(177, 341)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat591" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(175, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat592" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(177, 434)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat593" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat594" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 413)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat595" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(175, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat596" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(176, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat597" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat598" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 387)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat599" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 365)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat600" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat601" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(193, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat602" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(192, 332)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat603" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(193, 343)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat604" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(191, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat605" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(193, 433)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat606" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat607" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 410)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat608" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(191, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat609" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(192, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat610" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(146, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat611" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(146, 393)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat612" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(146, 372)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat613" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(146, 382)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat614" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(145, 351)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat615" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(146, 361)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat616" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(144, 331)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat617" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(145, 341)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat618" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(143, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat619" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(145, 434)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat620" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(146, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat621" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(146, 413)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat622" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(143, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat623" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(144, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat624" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat625" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 387)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat626" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 365)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat627" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat628" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(161, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat629" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(160, 332)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat630" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(161, 343)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat631" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(159, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat632" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(161, 433)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat633" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat634" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(162, 410)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat635" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(159, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat636" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(160, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat637" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 403)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat638" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 393)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat639" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 372)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat640" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 382)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat641" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(177, 351)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat642" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 361)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat643" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(176, 331)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat644" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(177, 341)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat645" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(175, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat646" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(177, 434)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat647" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 423)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat648" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(178, 413)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat649" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(175, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat650" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(176, 444)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat651" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 399)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat652" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 387)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat653" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 365)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat654" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat655" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(193, 354)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat656" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(192, 332)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat657" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(193, 343)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat658" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(191, 320)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat659" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(193, 433)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat660" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 421)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat661" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(194, 410)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat662" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(191, 455)
+scale = Vector2(0.5, 0.5)
+
+[node name="seat663" parent="." groups=["seats"] instance=ExtResource("2_wbgmb")]
+position = Vector2(192, 444)
 scale = Vector2(0.5, 0.5)
