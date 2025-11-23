@@ -1,20 +1,141 @@
-[gd_scene load_steps=5 format=3 uid="uid://wpgnhi1e2agm"]
+[gd_scene load_steps=18 format=3 uid="uid://wpgnhi1e2agm"]
 
 [ext_resource type="Script" uid="uid://b3cfcxo354wt4" path="res://scripts/stadium_1.gd" id="1_rlugu"]
 [ext_resource type="Texture2D" uid="uid://d111pc2gcfjty" path="res://assets/house-of-blues.png" id="2_srk0e"]
 [ext_resource type="PackedScene" uid="uid://peklaytgqtgf" path="res://scenes/seat.tscn" id="3_ycan0"]
 [ext_resource type="FontFile" uid="uid://djtbv2fuoadpy" path="res://assets/Milk Cake.otf" id="4_srk0e"]
+[ext_resource type="Texture2D" uid="uid://bgg8tju0vcflo" path="res://assets/level_bg.png" id="5_ycan0"]
+[ext_resource type="Texture2D" uid="uid://wlb3jalngpg5" path="res://assets/star1.png" id="6_pmk4w"]
+[ext_resource type="Texture2D" uid="uid://cmlchhi77p15" path="res://assets/star2.png" id="7_sqqo0"]
+[ext_resource type="Texture2D" uid="uid://7r22d3s4w4kb" path="res://assets/star3.png" id="8_renyg"]
+
+[sub_resource type="Animation" id="Animation_sqqo0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.1, 0.1)]
+}
+
+[sub_resource type="Animation" id="Animation_pmk4w"]
+resource_name = "star1_pop"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.0333333, 0.2, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_renyg"]
+_data = {
+&"RESET": SubResource("Animation_sqqo0"),
+&"pop": SubResource("Animation_pmk4w")
+}
+
+[sub_resource type="Animation" id="Animation_kn3lc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.1, 0.1)]
+}
+
+[sub_resource type="Animation" id="Animation_renyg"]
+resource_name = "pop"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wahsy"]
+_data = {
+&"RESET": SubResource("Animation_kn3lc"),
+&"pop": SubResource("Animation_renyg")
+}
+
+[sub_resource type="Animation" id="Animation_6aod2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.1, 0.1)]
+}
+
+[sub_resource type="Animation" id="Animation_ip32w"]
+resource_name = "pop"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.35),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(1.2, 1.2), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ofs17"]
+_data = {
+&"RESET": SubResource("Animation_6aod2"),
+&"pop": SubResource("Animation_ip32w")
+}
 
 [node name="stadium1" type="Node"]
 script = ExtResource("1_rlugu")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.964706, 0.964706, 0.964706, 1)
+
 [node name="map" type="Sprite2D" parent="."]
-position = Vector2(8, 10)
+position = Vector2(63, 10)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("2_srk0e")
 centered = false
 
-[node name="SeatContainer" type="Node" parent="."]
+[node name="SeatContainer" type="Node2D" parent="."]
+position = Vector2(55, 0)
 
 [node name="seat" parent="SeatContainer" groups=["seats"] instance=ExtResource("3_ycan0")]
 position = Vector2(379, 92)
@@ -601,130 +722,162 @@ position = Vector2(670, 413)
 [node name="seat198" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(833, 229)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat199" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(816, 220)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat200" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(800, 212)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat201" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(880, 259)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat202" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(864, 248)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat203" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(849, 238)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat204" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(895, 270)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat205" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(823, 258)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat206" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(806, 248)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat207" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(790, 240)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat208" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(869, 288)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat209" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(854, 278)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat210" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(839, 267)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat211" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(884, 299)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat212" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(898, 312)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat213" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(812, 287)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat214" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(797, 278)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat215" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(780, 268)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat216" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(858, 318)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat217" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(844, 307)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat218" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(828, 297)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat219" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(873, 330)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat220" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(888, 342)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat221" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(802, 315)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat222" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(786, 306)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat223" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(770, 297)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat224" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(848, 347)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat225" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(832, 336)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat226" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(818, 325)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat227" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(862, 360)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat228" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(876, 372)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat229" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(793, 344)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat230" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(776, 334)
@@ -733,726 +886,907 @@ rotation = -2.59663
 [node name="seat231" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(760, 325)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat232" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(837, 377)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat233" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(823, 365)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat234" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(808, 354)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat235" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(851, 389)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat236" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(864, 402)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat237" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(782, 373)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat238" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(767, 363)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat239" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(751, 353)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat240" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(826, 407)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat241" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(812, 395)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat242" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(798, 384)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat243" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(840, 419)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat244" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(853, 433)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat245" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(772, 402)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat246" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(756, 391)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat247" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(740, 382)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat248" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(815, 437)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat249" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(801, 425)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat250" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(787, 412)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat251" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(828, 449)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat252" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(840, 463)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat253" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(762, 429)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat254" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(746, 420)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat255" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(731, 410)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat256" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(804, 466)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat257" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(790, 453)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat258" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(776, 441)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat259" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(816, 479)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat260" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(828, 494)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat261" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(751, 457)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat262" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(736, 447)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat263" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(721, 437)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat264" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(792, 495)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat265" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(779, 483)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat266" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(765, 469)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat267" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(804, 509)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat268" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(815, 524)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat270" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(849, 524)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat271" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(858, 541)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat272" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(873, 509)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat273" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(882, 524)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat274" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(863, 492)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat275" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(852, 478)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat276" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(838, 509)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat277" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(908, 508)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat278" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(897, 492)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat279" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(888, 477)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat280" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(877, 461)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat281" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(865, 447)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat282" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(932, 491)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat283" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(921, 475)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat284" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(912, 460)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat285" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(901, 444)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat286" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(889, 430)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat287" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(876, 416)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat288" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(888, 385)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat269" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(824, 540)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat289" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(902, 398)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat290" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(901, 355)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat291" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(223, 176)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat292" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(240, 169)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat293" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(258, 163)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat294" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(234, 203)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat295" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(251, 196)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat296" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(269, 190)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat297" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(243, 231)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat298" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(260, 224)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat299" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(278, 218)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat300" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(253, 258)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat301" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(270, 251)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat303" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(260, 286)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat304" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(277, 279)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat305" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(295, 273)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat306" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(271, 313)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat307" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(288, 306)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat308" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(306, 300)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat302" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(288, 245)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat309" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(280, 342)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat310" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(315, 328)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat311" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(289, 371)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat312" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(305, 363)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat313" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(323, 357)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat314" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(298, 399)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat315" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(314, 391)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat317" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(297, 334)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat316" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(332, 385)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat318" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(307, 427)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat320" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(324, 419)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat319" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(341, 412)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat321" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(184, 228)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat322" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(200, 219)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat323" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(217, 210)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat324" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(136, 257)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat325" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(151, 247)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat326" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(168, 237)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat327" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(121, 268)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat328" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(193, 257)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat329" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(209, 248)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat330" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(226, 239)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat331" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(145, 286)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat332" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(160, 276)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat333" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(177, 266)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat334" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(130, 297)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat335" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(202, 284)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat336" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(218, 275)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat337" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(235, 266)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat338" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(156, 315)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat339" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(171, 304)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat340" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(187, 294)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat341" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(141, 326)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat342" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(212, 312)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat343" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(228, 303)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat344" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(244, 295)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat345" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(166, 345)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat346" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(181, 333)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat347" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(196, 323)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat348" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(152, 356)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat349" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(220, 340)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat350" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(236, 331)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat351" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(253, 322)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat352" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(176, 374)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat353" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(190, 362)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat354" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(206, 351)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat355" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(162, 385)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat356" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(231, 369)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat357" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(247, 360)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat358" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(264, 351)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat359" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(186, 402)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat360" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(200, 390)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat361" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(216, 380)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat362" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(173, 415)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat363" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(241, 398)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat364" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(256, 388)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat365" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(273, 379)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat366" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(196, 431)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat367" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(211, 420)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat368" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(225, 409)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat369" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(183, 444)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat370" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(250, 427)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat371" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(265, 416)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat372" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(282, 407)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat373" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(207, 461)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat374" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(221, 449)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat375" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(235, 438)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat377" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(260, 456)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat378" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(275, 445)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat379" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(290, 435)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat380" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(218, 491)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat381" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(232, 478)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat382" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(246, 467)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat383" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(206, 505)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat384" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(122, 424)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat385" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(135, 411)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat386" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(149, 398)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat387" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(88, 468)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat388" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(98, 453)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat389" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(110, 439)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat390" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(77, 483)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat391" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(134, 454)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat392" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(145, 441)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat393" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(159, 428)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat394" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(102, 500)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat395" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(111, 485)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat396" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(122, 469)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat397" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(146, 485)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat398" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(157, 471)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat399" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(170, 458)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat400" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(125, 516)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat401" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(135, 501)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat402" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(160, 518)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat403" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(170, 503)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat404" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(182, 489)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat405" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(149, 534)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat406" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(137, 367)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat407" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(124, 381)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat408" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(111, 394)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat409" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(113, 350)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat410" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(127, 338)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat411" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(116, 309)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="seat376" parent="SeatContainer" instance=ExtResource("3_ycan0")]
 position = Vector2(195, 475)
 rotation = -3.10997
+scale = Vector2(1, 1)
 
 [node name="timer" type="Timer" parent="."]
 
@@ -1476,4 +1810,70 @@ theme_override_fonts/font = ExtResource("4_srk0e")
 theme_override_font_sizes/font_size = 80
 text = "START!"
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+visible = false
+offset_left = 200.0
+offset_top = 32.0
+offset_right = 950.0
+offset_bottom = 782.0
+scale = Vector2(0.1, 0.1)
+pivot_offset = Vector2(205, 145)
+texture = ExtResource("6_pmk4w")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect2"]
+libraries = {
+&"": SubResource("AnimationLibrary_renyg")
+}
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+visible = false
+offset_left = 185.0
+offset_top = 28.0
+offset_right = 935.0
+offset_bottom = 778.0
+scale = Vector2(0.1, 0.1)
+pivot_offset = Vector2(375, 110)
+texture = ExtResource("7_sqqo0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect3"]
+libraries = {
+&"": SubResource("AnimationLibrary_wahsy")
+}
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+visible = false
+offset_left = 165.0
+offset_top = 36.0
+offset_right = 915.0
+offset_bottom = 786.0
+scale = Vector2(0.1, 0.1)
+pivot_offset = Vector2(555, 145)
+texture = ExtResource("8_renyg")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureRect4"]
+libraries = {
+&"": SubResource("AnimationLibrary_ofs17")
+}
+
+[node name="TextureRect" type="TextureButton" parent="."]
+offset_left = 475.0
+offset_top = 425.0
+offset_right = 625.0
+offset_bottom = 575.0
+scale = Vector2(1.25, 0.5)
+texture_normal = ExtResource("5_ycan0")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 475.0
+offset_top = 425.0
+offset_right = 662.0
+offset_bottom = 500.0
+theme_override_colors/font_color = Color(0.227451, 0.0745098, 0, 1)
+theme_override_fonts/font = ExtResource("4_srk0e")
+theme_override_font_sizes/font_size = 35
+text = "Return"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="timeout" from="CountdownTimer" to="." method="_on_countdown_timer_timeout"]
+[connection signal="pressed" from="TextureRect" to="." method="_on_texture_rect_pressed"]

@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0msbv0vo6tlp"]
+[gd_scene load_steps=4 format=3 uid="uid://c0msbv0vo6tlp"]
 
 [ext_resource type="Script" uid="uid://b1snwig02ps3c" path="res://scripts/title_screen.gd" id="1_fgkus"]
+[ext_resource type="FontFile" uid="uid://djtbv2fuoadpy" path="res://assets/Milk Cake.otf" id="2_s4lrb"]
+[ext_resource type="Texture2D" uid="uid://bgg8tju0vcflo" path="res://assets/level_bg.png" id="3_mgrm8"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
@@ -19,15 +21,37 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="."]
 layout_mode = 2
-theme_override_font_sizes/font_size = 45
-text = "FIGHT FOR 2031 BTS CONCERT TICKETS"
+offset_top = 56.0
+offset_right = 1152.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.227451, 0.0745098, 0, 1)
+theme_override_fonts/font = ExtResource("2_s4lrb")
+theme_override_font_sizes/font_size = 90
+text = "TICKETMASTER TRAINER"
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Button" type="TextureButton" parent="."]
 layout_mode = 2
-theme_override_font_sizes/font_size = 35
-text = "PLAY!"
+offset_left = 362.0
+offset_top = 254.0
+offset_right = 512.0
+offset_bottom = 404.0
+scale = Vector2(3, 0.8)
+texture_normal = ExtResource("3_mgrm8")
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 254.0
+offset_right = 812.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0.227451, 0.0745098, 0, 1)
+theme_override_fonts/font = ExtResource("2_s4lrb")
+theme_override_font_sizes/font_size = 60
+text = "PLAY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

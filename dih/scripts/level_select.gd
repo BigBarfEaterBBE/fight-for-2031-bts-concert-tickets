@@ -2,8 +2,25 @@ extends Control
 const LEVEL1_SCENE = preload("res://scenes/stadium1.tscn")
 const TITLESCREEN_SCENE = preload("res://scenes/title_screen.tscn")
 const PLACEHOLDER_SCREEN = preload("res://scenes/place_holder_scene.tscn")
+@onready var stars = {
+	"Level1": {
+		"star1": get_node("VBoxContainer/LevelsContainer/Level1Button/TextureRect"),
+		"star2": get_node("VBoxContainer/LevelsContainer/Level1Button/TextureRect2"),
+		"star3": get_node("VBoxContainer/LevelsContainer/Level1Button/TextureRect3")
+	}
+}
 
-
+func _ready() -> void:
+	var level1_time = GameData.level_scores["Level1"]
+	if level1_time > -1.0:
+		if level1_time < GameData.levels["Level1"]["best"]:
+			for i in range(1, 4):
+				stars["Level1"]["star" + str(i)].show()
+		elif level1_time < GameData.levels["Level1"]["okay"]:
+			for i in range(1,3):
+				stars["Level1"]["star" + str(i)].show()
+		elif level1_time < GameData.levels["Level1"]["worst"]:
+			stars["Level1"]["star1"].show()
 
 func _on_level_1_button_pressed() -> void:
 	get_tree().call_deferred("change_scene_to_packed", LEVEL1_SCENE)
